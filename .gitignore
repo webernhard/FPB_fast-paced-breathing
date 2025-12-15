@@ -1,3 +1,12 @@
+### bws ###
+data/
+prev_ver/
+*.csv
+*.psydat
+*_legacy*
+*hv_new*
+*FBP_new*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
