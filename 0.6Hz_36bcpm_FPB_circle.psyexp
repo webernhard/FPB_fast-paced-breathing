@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2025.1.1">
+  <Settings>
+    <Param val="1" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['UPN-ID'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'session_admin': 'xxx', 'UPN-ID': '999'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="HD-Lab" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="False" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="2025.1.1" valType="str" updates="None" name="Use version"/>
+    <Param val="[1920, 1080]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="float" valType="str" updates="None" name="clockFormat"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="$[0,0,0]" valType="str" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
+    <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="0.6Hz_36bcpm_FPB_circle" valType="str" updates="None" name="expName"/>
+    <Param val="" valType="str" updates="None" name="expVersion"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="error" valType="code" updates="None" name="logging level"/>
+    <Param val="False" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
+    <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="True" valType="bool" updates="None" name="plCompanionRecordingEnabled"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="1" valType="code" updates="None" name="runMode"/>
+    <Param val="False" valType="bool" updates="None" name="rush"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="_settings">
+      <RoutineSettingsComponent name="_settings" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="_settings" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="set_things" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="## ########################################################################## ##&amp;#10;## ##                                                                      ## ##&amp;#10;## ##              FAST PACED BREATHING (FPB)/HYPERVENTILATION             ## ##&amp;#10;## ##                                                                      ## ##&amp;#10;## #########################|12/2025|bw (bernhard.weber@uni-graz.at)|CC-BY|## ##&amp;#10;print(data.getDateStr(format=&quot;%H:%M:%S.%m&quot;))   #local: set/mark start of current run&amp;#10;&amp;#10;##  Options for DEBUG/RESARCH-mode  ##&amp;#10;DEBUG = 1   #0=research-mode; 1=debug-mode &amp;#10;if DEBUG:&amp;#10;    BREATHING_DUR = 10          #debug: breathing duration in [s]&amp;#10;else:&amp;#10;    BREATHING_DUR = 120         #breathing duration in [s]&amp;#10;&amp;#10;##  enable parallel port for markers  ##&amp;#10;from psychopy import parallel&amp;#10;Marker = parallel.ParallelPort(address=0x3FF8)&amp;#10;&amp;#10;&amp;#10;##  Options for ONSCREEN-KEYBOARD (touchscreen WACOM ONE)  ##&amp;#10;ONSCREENKEYBOARD = 0   #0=NO onscreen keyboard; 1=ONSCREEN-KEYBOARD with touchscreen WACOM ONE&amp;#10;if ONSCREENKEYBOARD:&amp;#10;    header_pos_y = .40&amp;#10;    main_pos_y   = .225&amp;#10;    main_pos_y_px= 270&amp;#10;    btn_pos_y    = .05&amp;#10;    hint_pos_y   = 0&amp;#10;else:&amp;#10;    header_pos_y = .40&amp;#10;    main_pos_y   = 0&amp;#10;    main_pos_y_px= 0&amp;#10;    btn_pos_y    = -.25&amp;#10;    hint_pos_y   = -.45&amp;#10;&amp;#10;&amp;#10;##  initialize some vars  ##&amp;#10;win.mouseVisible = True&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="##  marker: FPB task START  ##&amp;#10;Marker.setData(205); core.wait(0.1); Marker.setData(0)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="##  marker: FPB task STOP  ##&amp;#10;Marker.setData(207); core.wait(0.1); Marker.setData(0)&amp;#10;" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="set_things" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="thx">
+      <RoutineSettingsComponent name="thx" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="thx" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="thx_txt" plugin="None">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="3" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.035" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="thx_txt" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Vielen Dank,&amp;#10;&amp;#10;dieser Teil der Untersuchung ist zu Ende." valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="thx_key" plugin="None">
+        <Param val="'return','space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="thx_key" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="thx_hint" plugin="None">
+        <Param val="$[-0.25,-0.25,-0.25]" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="thx_hint" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(.25, btn_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Beenden mit Enter" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="HV">
+      <RoutineSettingsComponent name="HV" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="HV" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="HVcode" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="##  respiration timer  ##&amp;#10;respClock = core.Clock()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="bar_posX = ((- bar_height) / 2);&amp;#10;bar_size = 0;&amp;#10;slider_color = inhale_color;&amp;#10;first = false;&amp;#10;second = false;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="win.mouseVisible = False&amp;#10;&amp;#10;c_resp_txt.alignText = 'center'&amp;#10;&amp;#10;##  &gt; 'Einatmen'&amp;#10;resp_txt = 'Einatmen'&amp;#10;b_txt_size = 0.035&amp;#10;&amp;#10;circle_color = inhale_color         #(re)set color of breathing bar&amp;#10;&amp;#10;respTime = 0&amp;#10;respClock.reset()&amp;#10;&amp;#10;exhale = False&amp;#10;&amp;#10;HVonce = False&amp;#10;#print(&quot;current HV-loop:&quot;, (HV_loop.thisN, HV_loops, HV_loop.thisTrialN))&amp;#10;&amp;#10;tonce = False&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="try:&amp;#10;    ##  get current (respiration-animation) time  ##&amp;#10;    respTime = respClock.getTime()&amp;#10;&amp;#10;    # # # respiration text: basic-size = 0.035  ##&amp;#10;    # # #    '/50' &gt; flatten the (cos-)curve; +1/50 &gt; offset to start x=0|y=0&amp;#10;    # # # b_txt_size = 0.035 -cos(pi*respTime/(dur_inhaleIHOH+durHold))/50 +1/50 #&amp;#10;&amp;#10;    ##  respiration circle: res(idual)-size = 200px  ##&amp;#10;    ##    '+|- '150' &gt; variability of circle size&amp;#10;    circ_dia = res_size -cosXYshift*cos(pi*respTime/(dur_inhaleIHOH+durHold)) + cosXYshift&amp;#10;&amp;#10;    ##  &gt; hold&amp;#10;    #if respTime &gt;= dur_inhaleIHOH: resp_txt = ' '  #no 'hold' for HV&amp;#10;&amp;#10;    ##  &gt; 'Ausatmen'&amp;#10;    if respTime &gt;= (dur_inhaleIHOH+durHold):&amp;#10;    #if not exhale and respTime &gt;= (dur_inhaleIHOH+durHold) and HV_loop.thisN+1 &lt; HV_loops:&amp;#10;        exhale = True&amp;#10;        #print(&quot;EXHALE - current info HV_loop.thisN, HV_loops:&quot;, (HV_loop.thisN, HV_loops))&amp;#10;        #   #another (slower/faster) x-shifted (=move left/right) &quot;cos()&quot;-function&amp;#10;        circ_dia = res_size -cosXYshift*cos(pi*respTime/(dur_exhaleIHOH+durHold) + shift_x) + cosXYshift&amp;#10;&amp;#10;        circle_color = exhale_color&amp;#10;        resp_txt = 'Ausatmen'&amp;#10;&amp;#10;except Exception as e:&amp;#10;    # Log or handle exceptions here&amp;#10;    print(f&quot;An error occurred: {e}&quot;)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((! first)) {&amp;#10;    startTime = t;&amp;#10;    first = true;&amp;#10;}&amp;#10;if ((! (INHALE.status === PsychoJS.Status.FINISHED))) {&amp;#10;    bar_size = ((t - startTime) * (bar_height / dur_inhaleIHOH));&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! second))) {&amp;#10;    startTime = t;&amp;#10;    slider_color = exhale_color;&amp;#10;    second = true;&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! (EXHALE.status === PsychoJS.Status.FINISHED)))) {&amp;#10;    bar_size = (bar_height - ((t - startTime) * (bar_height / dur_exhaleIHOH)));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="win.mouseVisible = True&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="HVcode" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="c_resp_frame" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="0.5" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="0.8824, 0.9451, 1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="black" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="c_resp_frame" valType="code" updates="None" name="name"/>
+        <Param val="0.5" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y_px)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(circle_size+frameExtension, circle_size+frameExtension)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="respTime &gt;= (dur_inhaleIHOH + durHold + dur_exhaleIHOH + durHold)" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="pix" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="resp_circle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$circle_color" valType="color" updates="set every frame" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$circle_color" valType="color" updates="set every frame" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="resp_circle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y_px)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(circ_dia, circ_dia)" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="respTime &gt;= (dur_inhaleIHOH + durHold + dur_exhaleIHOH + durHold)" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="pix" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <TextComponent name="c_resp_txt" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val=".75" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="b_txt_size*1000" valType="num" updates="set every frame" name="letterHeight"/>
+        <Param val="c_resp_txt" valType="code" updates="None" name="name"/>
+        <Param val=".75" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y_px)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="respTime &gt;= (dur_inhaleIHOH + durHold + dur_exhaleIHOH + durHold)" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$resp_txt" valType="str" updates="set every frame" name="text"/>
+        <Param val="pix" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="HV_new">
+      <RoutineSettingsComponent name="HV_new" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="HV_new" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="HVnew_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="##  respiration timer  ##&amp;#10;#respClock = core.Clock()&amp;#10;&amp;#10;# Timer für diese Routine&amp;#10;breathing_clock = core.Clock()&amp;#10;&amp;#10;# Dauer der Atemball-Routine in Sekunden&amp;#10;breathing_duration = 10.0  # oder wie lange du willst&amp;#10;&amp;#10;# Erstelle die visuellen Komponenten (nutzt das bestehende win-Objekt)&amp;#10;breathing_circle = visual.Circle(&amp;#10;    win,&amp;#10;    #win=win,&amp;#10;    radius=MAX_RADIUS * MIN_SIZE_PERCENT,&amp;#10;    edges=64,&amp;#10;    lineColor=[1, 1, 1],&amp;#10;    lineWidth=3,&amp;#10;    pos=[0, 0]  # Position anpassen falls nötig&amp;#10;)&amp;#10;&amp;#10;breathing_text = visual.TextStim(&amp;#10;    win,&amp;#10;    #win=win,&amp;#10;    text='',&amp;#10;    pos=[0, -350],  # Position unter dem Ball&amp;#10;    #height=40, #px&amp;#10;    height=.35, # unit: norm&amp;#10;    color=[1, 1, 1]&amp;#10;)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="bar_posX = ((- bar_height) / 2);&amp;#10;bar_size = 0;&amp;#10;slider_color = inhale_color;&amp;#10;first = false;&amp;#10;second = false;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# ===== BEGIN ROUTINE Tab =====&amp;#10;# Dieser Code kommt in den &quot;Begin Routine&quot; Tab&amp;#10;&amp;#10;#from psychopy import visual, core&amp;#10;&amp;#10;print(&quot;=== ATEMBALL ROUTINE STARTET ===&quot;)&amp;#10;&quot;&quot;&quot;&amp;#10;# Erstelle die visuellen Komponenten (nutzt das bestehende win-Objekt)&amp;#10;breathing_circle = visual.Circle(&amp;#10;    win,&amp;#10;    #win=win,&amp;#10;    radius=MAX_RADIUS * MIN_SIZE_PERCENT,&amp;#10;    edges=64,&amp;#10;    lineColor=[1, 1, 1],&amp;#10;    lineWidth=3,&amp;#10;    pos=[0, 0]  # Position anpassen falls nötig&amp;#10;)&amp;#10;&amp;#10;breathing_text = visual.TextStim(&amp;#10;    win,&amp;#10;    #win=win,&amp;#10;    text='',&amp;#10;    pos=[0, -350],  # Position unter dem Ball&amp;#10;    #height=40, #px&amp;#10;    height=.35, # unit: norm&amp;#10;    color=[1, 1, 1]&amp;#10;)&amp;#10;&quot;&quot;&quot;&amp;#10;#print(&quot;Komponenten erstellt, Timer gestartet&quot;)&amp;#10;&amp;#10;b_start = breathing_clock.getTime()&amp;#10;print(f'{b_start=}')&amp;#10;print(&quot;Timer gestartet&quot;)&amp;#10;&amp;#10;&amp;#10;&quot;&quot;&quot;&amp;#10;## ===== AUSFÜHRUNG =====&amp;#10;#if __name__ == '__main__':&amp;#10;#    # Starte für 60 Sekunden (oder endlos mit duration=0)&amp;#10;#    run_breathing_ball(duration=30)&amp;#10;print(&quot;go 4 it&quot;)&amp;#10;run_breathing_ball(duration=30)&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;win.mouseVisible = False&amp;#10;&amp;#10;c_resp_txt.alignText = 'center'&amp;#10;&amp;#10;##  &gt; 'Einatmen'&amp;#10;resp_txt = 'Einatmen'&amp;#10;b_txt_size = 0.035&amp;#10;&amp;#10;circle_color = inhale_color         #(re)set color of breathing bar&amp;#10;&amp;#10;respTime = 0&amp;#10;respClock.reset()&amp;#10;&amp;#10;exhale = False&amp;#10;&amp;#10;HVonce = False&amp;#10;#print(&quot;current HV-loop:&quot;, (HV_loop.thisN, HV_loops, HV_loop.thisTrialN))&amp;#10;&amp;#10;tonce = False&amp;#10;&quot;&quot;&quot;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="# Berechne verstrichene Zeit&amp;#10;elapsed = breathing_clock.getTime()&amp;#10;&amp;#10;# Hole aktuellen Zustand&amp;#10;radius, color, phase = get_breathing_state(elapsed)&amp;#10;&amp;#10;# Aktualisiere Kreis&amp;#10;breathing_circle.radius = radius&amp;#10;breathing_circle.fillColor = color&amp;#10;&amp;#10;# Aktualisiere Text (optional)&amp;#10;breathing_text.text = phase&amp;#10;&amp;#10;# Zeichne die Komponenten&amp;#10;breathing_circle.draw()&amp;#10;breathing_text.draw()&amp;#10;&amp;#10;core.wait(.5)&amp;#10;&amp;#10;# Debug-Output (nur ersten Frame und dann alle 60 Frames)&amp;#10;if frameN == 0 or frameN % 60 == 0:&amp;#10;    print(f&quot;Frame {frameN}: Zeit={elapsed:.2f}s, Phase={phase}, Radius={radius:.3f}&quot;)&amp;#10;&amp;#10;&amp;#10;# Beende Routine nach festgelegter Zeit&amp;#10;#if elapsed &gt;= b_start + breathing_duration:&amp;#10;#    continueRoutine = False&amp;#10;&amp;#10;&amp;#10;&quot;&quot;&quot;&amp;#10;try:&amp;#10;    ##  get current (respiration-animation) time  ##&amp;#10;    respTime = respClock.getTime()&amp;#10;&amp;#10;    # # # respiration text: basic-size = 0.035  ##&amp;#10;    # # #    '/50' &gt; flatten the (cos-)curve; +1/50 &gt; offset to start x=0|y=0&amp;#10;    # # # b_txt_size = 0.035 -cos(pi*respTime/(dur_inhaleIHOH+durHold))/50 +1/50 #&amp;#10;&amp;#10;    ##  respiration circle: res(idual)-size = 200px  ##&amp;#10;    ##    '+|- '150' &gt; variability of circle size&amp;#10;    circ_dia = res_size -cosXYshift*cos(pi*respTime/(dur_inhaleIHOH+durHold)) + cosXYshift&amp;#10;&amp;#10;    ##  &gt; hold&amp;#10;    #if respTime &gt;= dur_inhaleIHOH: resp_txt = ' '  #no 'hold' for HV&amp;#10;&amp;#10;    ##  &gt; 'Ausatmen'&amp;#10;    if respTime &gt;= (dur_inhaleIHOH+durHold):&amp;#10;    #if not exhale and respTime &gt;= (dur_inhaleIHOH+durHold) and HV_loop.thisN+1 &lt; HV_loops:&amp;#10;        exhale = True&amp;#10;        #print(&quot;EXHALE - current info HV_loop.thisN, HV_loops:&quot;, (HV_loop.thisN, HV_loops))&amp;#10;        #   #another (slower/faster) x-shifted (=move left/right) &quot;cos()&quot;-function&amp;#10;        circ_dia = res_size -cosXYshift*cos(pi*respTime/(dur_exhaleIHOH+durHold) + shift_x) + cosXYshift&amp;#10;&amp;#10;        circle_color = exhale_color&amp;#10;        resp_txt = 'Ausatmen'&amp;#10;&amp;#10;except Exception as e:&amp;#10;    # Log or handle exceptions here&amp;#10;    print(f&quot;An error occurred: {e}&quot;)&amp;#10;&amp;#10;&quot;&quot;&quot;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((! first)) {&amp;#10;    startTime = t;&amp;#10;    first = true;&amp;#10;}&amp;#10;if ((! (INHALE.status === PsychoJS.Status.FINISHED))) {&amp;#10;    bar_size = ((t - startTime) * (bar_height / dur_inhaleIHOH));&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! second))) {&amp;#10;    startTime = t;&amp;#10;    slider_color = exhale_color;&amp;#10;    second = true;&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! (EXHALE.status === PsychoJS.Status.FINISHED)))) {&amp;#10;    bar_size = (bar_height - ((t - startTime) * (bar_height / dur_exhaleIHOH)));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="win.mouseVisible = True&amp;#10;&amp;#10;# ===== END ROUTINE Tab (Optional) =====&amp;#10;# Dieser Code kommt in den &quot;End Routine&quot; Tab - nur falls du aufräumen möchtest&amp;#10;&amp;#10;# Optional: Variablen löschen um Speicher freizugeben&amp;#10;# del breathing_circle&amp;#10;# del breathing_text&amp;#10;# del breathing_clock&amp;#10;&amp;#10;print(f&quot;=== ATEMBALL ROUTINE BEENDET nach {breathing_clock.getTime():.1f}s ===&quot;)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="HVnew_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="FPB">
+      <RoutineSettingsComponent name="FPB" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="FPB" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="FPB_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="###   ===== CONFIGURATION =====   ###&amp;#10;# BCPM ... breathing-cycles per minute (&gt; for Hyperventilation/fast breathing)&amp;#10;# -----------------------------------&amp;#10;#BCPM = 6                   # 6 breathing-cycles per minute = 0.1Hz &gt; STANDARD SLOW PACED BREATHING&amp;#10;BCPM = 36                   #36 breathing-cycles per minute = 0.6Hz &gt; STANDARD FAST PACED BREATHING&amp;#10;#BCPM = 50                  #50 breathing-cycles per minute = 1.2Hz - fast paced HV (Angerbauer 2025)&amp;#10;#BCPM = 60                  #60 breathing-cycles per minute&amp;#10;#BCPM = 65                  #65 breathing-cycles per minute&amp;#10;#BCPM = 70                  #70 breathing-cycles per minute&amp;#10;&amp;#10;##  duration of (fast paced) breathing task  ##&amp;#10;# &gt;&gt;(global) '_settings'- routine &gt;&gt; BREATHING_DUR = 10.0        #breathing duration in [s]&amp;#10;&amp;#10;#CYCLE_TIME = 10.0          # Gesamtdauer eines Atemzyklus in Sekunden&amp;#10;CYCLE_TIME = 60/BCPM        # 60s/breathing-cycles_per_minute&amp;#10;&amp;#10;#INHALE_RATIO = 0.60        # ratio of inhale (60% = 6s for a 10s cycle)&amp;#10;INHALE_RATIO = 0.50         # 50% inhale - 50% exhale&amp;#10;PAUSE_TIME = 0.05           # pause during in- and exhale&amp;#10;MIN_SIZE_PERCENT = 0.275    # 'residual volume' (xx% of maximum)&amp;#10;#MAX_RADIUS = 300           # max. radius [px]&amp;#10;#MAX_RADIUS = 0.3           # max. radius [norm] units; (0.3 = 30% der Fensterhöhe)&amp;#10;MAX_DIAMETER = 0.6          # max. diameter [norm] units (0.7 = 70% of screen/windowheight)&amp;#10;&amp;#10;##  define some colors (RGB from -1 to 1)&amp;#10;#COLOR_INHALE = [0.0, 0.5, 1.0]             #blue&amp;#10;COLOR_INHALE = [1.0000, 0.4275, 0.5137]     #breathing circle color (inhale JMT neu)&amp;#10;COL_INH_LINE = [1.0000, 0.2000, 0.6000]     #breathing cirlce line color&amp;#10;#COLOR_EXHALE = [1.0000, 0.3000, 0.5000]    #pink&amp;#10;COLOR_EXHALE = [0.0588, 0.6157, 0.9608]     #breathing bar color (exhale JMT_neu)&amp;#10;COL_EXH_LINE = [-0.500, 0.5000, 1.0000]     #breathing cirlce line color&amp;#10;COLOR_PAUSE = [0.8, 0.8, 1.0]               #lightblue&amp;#10;&amp;#10;&amp;#10;##  ===== CALCULATION OF PHASE TIMES =====  ##&amp;#10;total_pause = PAUSE_TIME * 2&amp;#10;active_time = CYCLE_TIME - total_pause&amp;#10;inhale_time = active_time * INHALE_RATIO&amp;#10;exhale_time = active_time - inhale_time&amp;#10;&amp;#10;print(f&quot;Atemzyklus Konfiguration:&quot;)&amp;#10;print(f&quot;  Anzahl Atemzüge/Minute: {BCPM}&quot;)&amp;#10;print(f&quot;  Atemfrequenz: {1/CYCLE_TIME:.4f}Hz&quot;)&amp;#10;print(f&quot;  Dauer Atemzug: {CYCLE_TIME:.4f}s&quot;)&amp;#10;print(f&quot;  Einatmen/inhale: {inhale_time:.1f}s&quot;)&amp;#10;print(f&quot;  Ausatmen/exhale: {exhale_time:.1f}s&quot;)&amp;#10;print(f&quot; (Pausen/hold á: {PAUSE_TIME}s)&quot;)&amp;#10;print(f&quot;  Min. Größe: {MIN_SIZE_PERCENT*100}%&quot;)&amp;#10;&amp;#10;&amp;#10;##  create the visual components  ##&amp;#10;# breathing-circle&amp;#10;breathing_circle = visual.ShapeStim(&amp;#10;     win, name='breathing_circle',&amp;#10;     #size=(2*MAX_RADIUS * MIN_SIZE_PERCENT, 2*MAX_RADIUS * MIN_SIZE_PERCENT), vertices='circle',&amp;#10;     size=(MAX_DIAMETER * MIN_SIZE_PERCENT, MAX_DIAMETER * MIN_SIZE_PERCENT), vertices='circle',&amp;#10;     ori=0.0, pos=(0, 0), draggable=False, anchor='center',&amp;#10;     lineWidth=3.0, colorSpace='rgb', lineColor=[0, 0, 0], fillColor='white',&amp;#10;     opacity=None, depth=0.0, interpolate=True&amp;#10; )&amp;#10;&amp;#10;# breathing-info/status-text&amp;#10;breathing_text = visual.TextStim(&amp;#10;    win,&amp;#10;    text='',&amp;#10;    #pos=[0, -350],  #px - position unter dem Ball&amp;#10;    pos=[0, 0],  #unit: norm/px&amp;#10;    #height=40, #px&amp;#10;    height=.035, # unit: norm&amp;#10;    color=[1, 1, 1]&amp;#10;)&amp;#10;&amp;#10;&amp;#10;##  ===== HELP-FUNCTIONS =====  ##&amp;#10;#smoothing the circle animation&amp;#10;def ease_in_out_sine(x):&amp;#10;    &quot;&quot;&quot;Smoothing function for natural breathing movement/Glättungsfunktion für natürliche Atembewegung&quot;&quot;&quot;&amp;#10;    return -(np.cos(np.pi * x) - 1) / 2&amp;#10;&amp;#10;#check current breathing-phase, call the calculation&amp;#10;def get_breathing_state(elapsed_time):&amp;#10;    &quot;&quot;&quot;&amp;#10;    Calculates radius/diameter and color based on elapsed time&amp;#10;    Berechnet Radius/Durchmesser und Farbe basierend auf der verstrichenen Zeit&amp;#10;    &amp;#10;    Returns:&amp;#10;        #tuple: (radius, color, phase_name)&amp;#10;        tuple: (radius, color, line_color, phase_name)&amp;#10;    &quot;&quot;&quot;&amp;#10;    et = elapsed_time % CYCLE_TIME&amp;#10;    #min_radius = MAX_RADIUS * MIN_SIZE_PERCENT&amp;#10;    min_diameter = MAX_DIAMETER * MIN_SIZE_PERCENT&amp;#10;    &amp;#10;    ## Phase 1: INHALE&amp;#10;    if et &lt; inhale_time:&amp;#10;        phase = &quot;Einatmen&quot;&amp;#10;        progress = et / inhale_time&amp;#10;        smooth_progress = ease_in_out_sine(progress)&amp;#10;        #radius = min_radius + (MAX_RADIUS - min_radius) * smooth_progress&amp;#10;        diameter = min_diameter + (MAX_DIAMETER - min_diameter) * smooth_progress&amp;#10;        color = COLOR_INHALE&amp;#10;        line_color = COL_INH_LINE&amp;#10;        &amp;#10;    ## Phase 2: PAUSE after inhale&amp;#10;    elif et &lt; inhale_time + PAUSE_TIME:&amp;#10;        #phase = &quot;Halten&quot;&amp;#10;        #phase = &quot;&quot;&amp;#10;        phase = &quot;Einatmen&quot;      #FPB, no 'hold'&amp;#10;        #radius = MAX_RADIUS&amp;#10;        diameter = MAX_DIAMETER&amp;#10;        #color = COLOR_PAUSE&amp;#10;        color = COLOR_INHALE&amp;#10;        line_color = COL_INH_LINE&amp;#10;        &amp;#10;    ## Phase 3: EXHALE&amp;#10;    elif et &lt; inhale_time + PAUSE_TIME + exhale_time:&amp;#10;        phase = &quot;Ausatmen&quot;&amp;#10;        progress = (et - inhale_time - PAUSE_TIME) / exhale_time&amp;#10;        smooth_progress = ease_in_out_sine(progress)&amp;#10;        #radius = MAX_RADIUS - (MAX_RADIUS - min_radius) * smooth_progress&amp;#10;        diameter = MAX_DIAMETER - (MAX_DIAMETER - min_diameter) * smooth_progress&amp;#10;        color = COLOR_EXHALE&amp;#10;        line_color = COL_EXH_LINE&amp;#10;        &amp;#10;    ## Phase 4: PAUSE after exhale&amp;#10;    else:&amp;#10;        #phase = &quot;Halten&quot;&amp;#10;        #phase = &quot;&quot;&amp;#10;        phase = &quot;Ausatmen&quot;      #FPB, no 'hold'&amp;#10;        #radius = min_radius&amp;#10;        diameter = min_diameter&amp;#10;        #color = COLOR_PAUSE&amp;#10;        color = COLOR_EXHALE&amp;#10;        line_color = COL_EXH_LINE&amp;#10;    &amp;#10;    #return radius, color, phase&amp;#10;    return diameter, color, line_color, phase&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="bar_posX = ((- bar_height) / 2);&amp;#10;bar_size = 0;&amp;#10;slider_color = inhale_color;&amp;#10;first = false;&amp;#10;second = false;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="##  Timer für respiration (circle/cylce)  ##&amp;#10;breathing_clock = core.Clock()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="##  updating breathing-circle parameter  ##&amp;#10;while True:&amp;#10;    elapsed = breathing_clock.getTime()     # Berechne verstrichene Zeit&amp;#10;    &amp;#10;    ## Beende Routine nach festgelegter Zeit&amp;#10;    if elapsed &gt;= BREATHING_DUR:&amp;#10;        break;&amp;#10;        &amp;#10;    ## ESC &gt;&gt; Exit&amp;#10;    if event.getKeys(['escape']):&amp;#10;        break&amp;#10;&amp;#10;    ## Hole aktuellen Zustand&amp;#10;    #radius, color, phase = get_breathing_state(elapsed)&amp;#10;    diameter, color, line_color, phase = get_breathing_state(elapsed)&amp;#10;&amp;#10;    ## Aktualisiere Kreis | Text (optional)&amp;#10;    #breathing_circle.radius     = radius&amp;#10;    breathing_circle.size       = diameter&amp;#10;    breathing_circle.fillColor  = color&amp;#10;    breathing_circle.lineColor  = line_color&amp;#10;    breathing_text.text         = phase&amp;#10;&amp;#10;    ## Zeichne die Komponenten&amp;#10;    breathing_circle.draw()&amp;#10;    breathing_text.draw()&amp;#10;    win.flip()&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((! first)) {&amp;#10;    startTime = t;&amp;#10;    first = true;&amp;#10;}&amp;#10;if ((! (INHALE.status === PsychoJS.Status.FINISHED))) {&amp;#10;    bar_size = ((t - startTime) * (bar_height / dur_inhaleIHOH));&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! second))) {&amp;#10;    startTime = t;&amp;#10;    slider_color = exhale_color;&amp;#10;    second = true;&amp;#10;}&amp;#10;if (((inHOLD.status === PsychoJS.Status.FINISHED) &amp;&amp; (! (EXHALE.status === PsychoJS.Status.FINISHED)))) {&amp;#10;    bar_size = (bar_height - ((t - startTime) * (bar_height / dur_exhaleIHOH)));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="##  marker: FPB 2min STOP  ##&amp;#10;Marker.setData(33); core.wait(0.1); Marker.setData(0)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="FPB_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="FPB_ins">
+      <RoutineSettingsComponent name="FPB_ins" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="FPB_ins" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="FPB_ins_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="FPB_ins_txt.alignText = 'center'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="FPB_ins_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="FPB_ins_header" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="FPB_ins_header" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, .4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(schnelle) Pendelatmung" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="1" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="FPB_ins_txt" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.0325" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="FPB_ins_txt" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Es folgt die schnelle Atembedingung mit {bcpm} Atemzügen/Minute. &amp;#10;Atme nun bitte in der mit dem Atemkreis vorgegebenen Frequenz.&amp;#10;&amp;#10;Wenn du bereit bist &gt; &quot;Weiter&quot;" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="1.25" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="FPB_ins_key" plugin="None">
+        <Param val="'return','space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="FPB_ins_key" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <PolygonComponent name="FPB_ins_btn" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="lightgrey" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="black" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="FPB_ins_btn" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, btn_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.15, 0.05)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <TextComponent name="FPB_ins_hint" plugin="None">
+        <Param val="darkgreen" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="FPB_ins_hint" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, btn_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Weiter" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="FPB_ins_mse" plugin="None">
+        <Param val="FPB_ins_btn" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="FPB_ins_mse" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="go4FPB">
+      <RoutineSettingsComponent name="go4FPB" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="go4FPB" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="go4FPB_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="##  marker: FPB 2min START  ##&amp;#10;Marker.setData(31); core.wait(0.1); Marker.setData(0)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="go4FPB_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="go4it_txt" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="go4it_txt" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, main_pos_y)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="...es beginnen die schnellen Atemzüge..." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="_settings"/>
+    <LoopInitiator loopType="TrialHandler" name="FPB_ins_byp">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="FPB_ins_byp" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="FPB_ins"/>
+    <LoopTerminator name="FPB_ins_byp"/>
+    <LoopInitiator loopType="TrialHandler" name="FPB_byp">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="FPB_byp" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="go4FPB"/>
+    <Routine name="FPB"/>
+    <LoopTerminator name="FPB_byp"/>
+    <Routine name="thx"/>
+  </Flow>
+</PsychoPy2experiment>

@@ -5,7 +5,7 @@ prev_ver/
 *.psydat
 *_legacy*
 *hv_new*
-*FBP_new*
+*FPB_new*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
