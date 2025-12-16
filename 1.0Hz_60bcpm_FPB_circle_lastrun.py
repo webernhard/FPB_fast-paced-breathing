@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Dezember 16, 2025, at 09:43
+    on Dezember 16, 2025, at 09:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -45,7 +45,7 @@ deviceManager = hardware.DeviceManager()
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
 psychopyVersion = '2025.1.1'
-expName = '0.6Hz_36bcpm_FPB_circle'  # from the Builder filename that created this script
+expName = '1.0Hz_60bcpm_FPB_circle'  # from the Builder filename that created this script
 expVersion = ''
 # a list of functions to run when the experiment ends (starts off blank)
 runAtExit = []
@@ -135,7 +135,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\weberbe\\Nextcloud\\__PsychoPy\\__Paradigmen_HD-Labor__\\fast_paced_breathing\\0.6Hz_36bcpm_FPB_circle_lastrun.py',
+        originPath='C:\\Users\\weberbe\\Nextcloud\\__PsychoPy\\__Paradigmen_HD-Labor__\\fast_paced_breathing\\1.0Hz_60bcpm_FPB_circle_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -401,14 +401,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     Marker = parallel.ParallelPort(address=0x3FF8)
     
     ##  Options for DEBUG/RESARCH-mode  ##
-    DEBUG = 1   #0=research-mode; 1=debug-mode 
+    DEBUG = 0   #0=research-mode; 1=debug-mode 
     if DEBUG:
         BREATHING_DUR = 10          #debug: breathing duration in [s]
     else:
         BREATHING_DUR = 120         #breathing duration in [s]
     
     ## breathing frequency
-    BCPM = 36                       #36 breathing-cycles per minute = 0.600Hz > STANDARD FAST PACED BREATHING
+    BCPM = 60                       #60 breathing-cycles per minute = 1.0Hz
     
     
     ##  Options for ONSCREEN-KEYBOARD (touchscreen WACOM ONE)  ##
@@ -525,7 +525,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     print(f"  Einatmen/inhale: {inhale_time:.1f}s")
     print(f"  Ausatmen/exhale: {exhale_time:.1f}s")
     print(f" (Pausen/hold á: {PAUSE_TIME}s)")
-    print(f"  Min. Größe: {MIN_SIZE_PERCENT*100}%")
+    print(f"  Min. Größe: {MIN_SIZE_PERCENT*100:.2f}%")
     
     
     ##  create the visual components  ##
