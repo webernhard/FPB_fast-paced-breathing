@@ -14,4 +14,3 @@ availabe:
 set length of task | duration of pacing visualization:
 
 + BREATHING_DUR = 120         #breathing duration in [s]
-+ BREATHING_DUR = 20          #DBG: breathing duration in [s]
