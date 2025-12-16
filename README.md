@@ -7,7 +7,11 @@ availabe:
 + 1.000 Hz, 60 bcpm
 + 1.083 Hz, 65 bcpm
 + 1.166 Hz, 70 bcpm
-+ 1.250 Hz, 75 bcpm
-
-set length of task | duration of pacing visualization:
++ 1.250 Hz, 75 bcpm
+
+
+
+set length of task | duration of pacing visualization:
+
 + BREATHING_DUR = 120         #breathing duration in [s]
++ BREATHING_DUR = 20          #DBG: breathing duration in [s]
