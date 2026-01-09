@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Dezember 16, 2025, at 10:07
+    on Jänner 09, 2026, at 11:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -439,8 +439,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color='black', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
-    FPB_bcpm_ins_txt = visual.TextStim(win=win, name='FPB_bcpm_ins_txt',
-        text="Es folgt die schnelle Atembedingung mit %s Atemzügen/Minute.\nAtme nun bitte in der mit dem Atemkreis vorgegebenen Frequenz.\n\n Wenn du bereit bist > 'Weiter'" % (BCPM),
+    FPB_ins_txt = visual.TextStim(win=win, name='FPB_ins_txt',
+        text='Es folgt die schnelle Atembedingung. \nAtme nun bitte in der mit dem Atemkreis vorgegebenen Frequenz.\n\nWenn du bereit bist > "Weiter"',
         font='Arial',
         pos=(0, main_pos_y), draggable=False, height=0.0325, wrapWidth=1.25, ori=0.0, 
         color='black', colorSpace='rgb', opacity=None, 
@@ -496,7 +496,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     #INHALE_RATIO = 0.60        # ratio of inhale (60% = 6s for a 10s cycle)
     INHALE_RATIO = 0.50         # 50% inhale - 50% exhale
-    PAUSE_TIME = 0.05           # pause during in- and exhale
+    PAUSE_TIME = 0.00           # pause during in- and exhale
     MIN_SIZE_PERCENT = 0.275    # 'residual volume' (xx% of maximum)
     #MAX_RADIUS = 300           # max. radius [px]
     #MAX_RADIUS = 0.3           # max. radius [norm] units; (0.3 = 30% der Fensterhöhe)
@@ -672,8 +672,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     # Run 'Begin Routine' code from set_things
-    ##  marker: FPB task START  ##
-    Marker.setData(205); core.wait(0.1); Marker.setData(0)
+    ##  marker: FPB (1.083Hz, 65bcpm) task START  ##
+    Marker.setData(165); core.wait(0.1); Marker.setData(0)
     
     # store start times for _settings
     _settings.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
@@ -780,14 +780,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine FPB_ins
         FPB_ins = data.Routine(
             name='FPB_ins',
-            components=[FPB_ins_header, FPB_bcpm_ins_txt, FPB_ins_key, FPB_ins_btn, FPB_ins_hint, FPB_ins_mse],
+            components=[FPB_ins_header, FPB_ins_txt, FPB_ins_key, FPB_ins_btn, FPB_ins_hint, FPB_ins_mse],
         )
         FPB_ins.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from FPB_ins_code
-        #FPB_ins_txt.alignText = 'center'
-        FPB_bcpm_ins_txt.alignText = 'center'
+        FPB_ins_txt.alignText = 'center'
+        #FPB_bcpm_ins_txt.alignText = 'center'
         
         # create starting attributes for FPB_ins_key
         FPB_ins_key.keys = []
@@ -855,23 +855,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # update params
                 pass
             
-            # *FPB_bcpm_ins_txt* updates
+            # *FPB_ins_txt* updates
             
-            # if FPB_bcpm_ins_txt is starting this frame...
-            if FPB_bcpm_ins_txt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # if FPB_ins_txt is starting this frame...
+            if FPB_ins_txt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                FPB_bcpm_ins_txt.frameNStart = frameN  # exact frame index
-                FPB_bcpm_ins_txt.tStart = t  # local t and not account for scr refresh
-                FPB_bcpm_ins_txt.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(FPB_bcpm_ins_txt, 'tStartRefresh')  # time at next scr refresh
+                FPB_ins_txt.frameNStart = frameN  # exact frame index
+                FPB_ins_txt.tStart = t  # local t and not account for scr refresh
+                FPB_ins_txt.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(FPB_ins_txt, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'FPB_bcpm_ins_txt.started')
+                thisExp.timestampOnFlip(win, 'FPB_ins_txt.started')
                 # update status
-                FPB_bcpm_ins_txt.status = STARTED
-                FPB_bcpm_ins_txt.setAutoDraw(True)
+                FPB_ins_txt.status = STARTED
+                FPB_ins_txt.setAutoDraw(True)
             
-            # if FPB_bcpm_ins_txt is active this frame...
-            if FPB_bcpm_ins_txt.status == STARTED:
+            # if FPB_ins_txt is active this frame...
+            if FPB_ins_txt.status == STARTED:
                 # update params
                 pass
             
@@ -1200,8 +1200,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         go4FPB.tStopRefresh = tThisFlipGlobal
         thisExp.addData('go4FPB.stopped', go4FPB.tStop)
         # Run 'End Routine' code from go4FPB_code
-        ##  marker: FPB 2min START  ##
-        Marker.setData(31); core.wait(0.1); Marker.setData(0)
+        ##  marker: FPB (1.083Hz, 65bcpm) START  ##
+        Marker.setData(65); core.wait(0.1); Marker.setData(0)
+        
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if go4FPB.maxDurationReached:
             routineTimer.addTime(-go4FPB.maxDuration)
@@ -1325,8 +1326,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         FPB.tStopRefresh = tThisFlipGlobal
         thisExp.addData('FPB.stopped', FPB.tStop)
         # Run 'End Routine' code from FPB_code
-        ##  marker: FPB 2min STOP  ##
-        Marker.setData(33); core.wait(0.1); Marker.setData(0)
+        ##  marker: FPB (1.083Hz, 65bcpm) STOP  ##
+        Marker.setData(67); core.wait(0.1); Marker.setData(0)
+        
         # the Routine "FPB" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisFPB_byp as finished
@@ -1554,8 +1556,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         routineTimer.addTime(-3.000000)
     thisExp.nextEntry()
     # Run 'End Experiment' code from set_things
-    ##  marker: FPB task STOP  ##
-    Marker.setData(207); core.wait(0.1); Marker.setData(0)
+    ##  marker: FPB (1.083Hz, 65bcpm) task STOP  ##
+    Marker.setData(167); core.wait(0.1); Marker.setData(0)
     
     
     # mark experiment as finished

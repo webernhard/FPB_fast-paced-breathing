@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Jänner 09, 2026, at 11:09
+    on Jänner 09, 2026, at 10:38
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -45,7 +45,7 @@ deviceManager = hardware.DeviceManager()
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
 psychopyVersion = '2025.1.1'
-expName = '1.25Hz_75bcpm_FPB_circle'  # from the Builder filename that created this script
+expName = '0.5Hz_30bcpm_FPB_circle'  # from the Builder filename that created this script
 expVersion = ''
 # a list of functions to run when the experiment ends (starts off blank)
 runAtExit = []
@@ -69,7 +69,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = [1920, 1080]
+_winSize = [1920, 1200]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -135,7 +135,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\weberbe\\Nextcloud\\__PsychoPy\\__Paradigmen_HD-Labor__\\fast_paced_breathing\\1.25Hz_75bcpm_FPB_circle_lastrun.py',
+        originPath='C:\\Users\\weberbe\\Nextcloud\\__PsychoPy\\__Paradigmen_HD-Labor__\\fast_paced_breathing\\0.5Hz_30bcpm_FPB_circle_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -408,7 +408,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         BREATHING_DUR = 120         #breathing duration in [s]
     
     ## breathing frequency
-    BCPM = 75                       #75 breathing-cycles per minute = 1.25Hz
+    BCPM = 30                       #30 breathing-cycles per minute = 0.500Hz
+    #BCPM = 36                      #36 breathing-cycles per minute = 0.600Hz > STANDARD FAST PACED BREATHING
     
     
     ##  Options for ONSCREEN-KEYBOARD (touchscreen WACOM ONE)  ##
@@ -480,6 +481,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # BCPM ... breathing-cycles per minute (> for Hyperventilation/fast breathing)
     # -----------------------------------
     #BCPM = 6                   # 6 breathing-cycles per minute = 0.100Hz > STANDARD SLOW PACED BREATHING
+    #BCPM = 30                  #30 breathing-cycles per minute = 0.500Hz
     #BCPM = 36                  #36 breathing-cycles per minute = 0.600Hz > STANDARD FAST PACED BREATHING
     #BCPM = 50                  #50 breathing-cycles per minute = 0.833Hz - fast paced HV (Angerbauer 2025)
     #BCPM = 60                  #60 breathing-cycles per minute = 1.000Hz
@@ -672,8 +674,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     # Run 'Begin Routine' code from set_things
-    ##  marker: FPB (1.25Hz, 75bcpm) task START  ##
-    Marker.setData(175); core.wait(0.1); Marker.setData(0)
+    ##  marker: FPB (0.5Hz, 30bcpm) task START  ##
+    Marker.setData(131); core.wait(0.1); Marker.setData(0)
     
     # store start times for _settings
     _settings.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
@@ -1200,9 +1202,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         go4FPB.tStopRefresh = tThisFlipGlobal
         thisExp.addData('go4FPB.stopped', go4FPB.tStop)
         # Run 'End Routine' code from go4FPB_code
-        ##  marker: FPB (1.25Hz, 75bcpm) START  ##
-        Marker.setData(75); core.wait(0.1); Marker.setData(0)
-        
+        ##  marker: FPB (0.5Hz, 30bcpm) 2min START  ##
+        Marker.setData(31); core.wait(0.1); Marker.setData(0)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if go4FPB.maxDurationReached:
             routineTimer.addTime(-go4FPB.maxDuration)
@@ -1326,9 +1327,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         FPB.tStopRefresh = tThisFlipGlobal
         thisExp.addData('FPB.stopped', FPB.tStop)
         # Run 'End Routine' code from FPB_code
-        ##  marker: FPB (1.25Hz, 75bcpm) STOP  ##
-        Marker.setData(77); core.wait(0.1); Marker.setData(0)
-        
+        ##  marker: FPB (0.5Hz, 30bcpm) 2min STOP  ##
+        Marker.setData(33); core.wait(0.1); Marker.setData(0)
         # the Routine "FPB" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisFPB_byp as finished
@@ -1556,8 +1556,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         routineTimer.addTime(-3.000000)
     thisExp.nextEntry()
     # Run 'End Experiment' code from set_things
-    ##  marker: FPB (1.25Hz, 75bcpm) task STOP  ##
-    Marker.setData(177); core.wait(0.1); Marker.setData(0)
+    ##  marker: FPB (0.5Hz, 30bcpm) task STOP  ##
+    Marker.setData(133); core.wait(0.1); Marker.setData(0)
     
     
     # mark experiment as finished
